@@ -44,6 +44,7 @@ The app will be available on http://localhost:5173 by default.
 
 - Component Hierarchy diagram
   ![](./public/component-hierarchy-diagram.png)
+  ![](./public/component-hierarchy-diagram-state-props.png)
 
 - React Dev Tools
   ![](./public/react-devtools.png)

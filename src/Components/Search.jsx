@@ -1,11 +1,21 @@
-const Search = () => {
+import PropTypes from 'prop-types';
+const Search = ({ searchQuery, onCarSearch }) => {
   return (
-    <input
-      className='border rounded basis-1/4 py-1 px-2'
-      type='text'
-      placeholder='Search cars...'
-    />
+    <form action=''>
+      <input
+        className='border rounded basis-1/4 py-1 px-2'
+        value={searchQuery}
+        type='text'
+        placeholder='Search cars...'
+        onChange={e => onCarSearch(e.target.value)}
+      />
+    </form>
   );
+};
+
+Search.propTypes = {
+  searchQuery: PropTypes.string.isRequired,
+  onCarSearch: PropTypes.func.isRequired,
 };
 
 export default Search;
