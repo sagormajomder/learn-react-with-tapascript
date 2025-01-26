@@ -3,7 +3,7 @@ const Search = ({ searchQuery, onCarSearch }) => {
   return (
     <form action=''>
       <input
-        className='border rounded basis-1/4 py-1 px-2'
+        className='border rounded-sm basis-1/4 py-1 px-2'
         value={searchQuery}
         type='text'
         placeholder='Search cars...'
